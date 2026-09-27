@@ -267,7 +267,7 @@ export const currency = {
     },
     {
       classRatingId: 'cr3', classType: 'GLIDER', licenseId: 'l3', regulatoryAuthority: 'EASA', licenseType: 'SPL',
-      status: 'current', windowOpen: false, messageKey: 'rating.recency_current', ruleDescriptionKey: 'easa_spl',
+      status: 'current', windowOpen: false, recencyExpiresOn: day(212), messageKey: 'rating.recency_current', ruleDescriptionKey: 'easa_spl',
       countedClasses: ['GLIDER', 'TMG'],
       creditedUltralightKinds: ['SAILPLANE', 'THREE_AXIS_MOTORGLIDER'],
       requirements: [
@@ -297,19 +297,19 @@ export const currency = {
     },
     {
       classRatingId: 'cr5', classType: 'SEP_LAND', licenseId: 'l5', regulatoryAuthority: 'EASA', licenseType: 'LAPL(A)',
-      status: 'current', windowOpen: false, messageKey: 'rating.recency_current', ruleDescriptionKey: 'easa_lapl',
+      status: 'current', windowOpen: false, recencyExpiresOn: day(388), messageKey: 'rating.recency_current', ruleDescriptionKey: 'easa_lapl',
       countedClasses: LAPL_POOL,
       requirements: LAPL_REQS,
     },
     {
       classRatingId: 'cr6', classType: 'TMG', licenseId: 'l5', regulatoryAuthority: 'EASA', licenseType: 'LAPL(A)',
-      status: 'current', windowOpen: false, messageKey: 'rating.recency_current', ruleDescriptionKey: 'easa_lapl',
+      status: 'current', windowOpen: false, recencyExpiresOn: day(388), messageKey: 'rating.recency_current', ruleDescriptionKey: 'easa_lapl',
       countedClasses: LAPL_POOL,
       requirements: LAPL_REQS,
     },
     {
       classRatingId: 'cr7', classType: 'GYROPLANE', licenseId: 'l6', regulatoryAuthority: 'EASA', licenseType: 'GPL',
-      status: 'current', windowOpen: false, messageKey: 'rating.recency_current', ruleDescriptionKey: 'easa_gpl',
+      status: 'current', windowOpen: false, recencyExpiresOn: day(96), messageKey: 'rating.recency_current', ruleDescriptionKey: 'easa_gpl',
       creditedUltralightKinds: ['GYROPLANE'],
       requirements: [
         { nameKey: 'requirement.total_time', met: true, current: 810, required: 720, unit: 'minutes', messageKey: 'requirement.progress' },

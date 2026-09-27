@@ -5319,6 +5319,18 @@ export interface components {
              */
             windowOpen?: boolean;
             /**
+             * Format: date
+             * @description For rolling-window recency rules (EASA LAPL FCL.140.A, SPL SFCL.160,
+             *     GPL FCL.240.G, German ultralight LuftPersV §45, FAA §61.57), the
+             *     last date the rule stays met if the pilot does not fly again — the
+             *     date the first requirement falls short as flights age out of the
+             *     window, or the proficiency check does, whichever is later. Set
+             *     only while `status` is `current`; omitted for expiry-anchored
+             *     revalidation rules, whose limit is `expiryDate`.
+             * @example 2027-05-31
+             */
+            recencyExpiresOn?: string | null;
+            /**
              * @description Stable key identifying which statement is true, for client-side localisation. Catalogued in docs/CURRENCY_MESSAGES.md.
              * @example rating.revalidation_current
              */
