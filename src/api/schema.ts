@@ -6295,6 +6295,11 @@ export interface components {
              * @description Last successful sign-in. Recorded for every path that issues a session: password login, the second factor, a passkey, OIDC, and the sign-up verification link (following it signs the new account in). Not updated by a token refresh.
              */
             lastLoginAt?: string;
+            /**
+             * Format: date-time
+             * @description Last authenticated API request, or the last sign-in if later. Recorded at a granularity of five minutes, so a session kept alive by refresh tokens still shows when the account was last used.
+             */
+            lastActiveAt?: string;
             /** @description Whether the user has verified their email address and completed sign-up */
             emailVerified: boolean;
             twoFactorEnabled: boolean;
