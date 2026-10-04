@@ -102,7 +102,7 @@ async function shoot(browser, target, theme) {
     // so this has to follow SHOT_LANG or a German capture shows US date pickers.
     // Still fixed per language, which is what stops formats drifting per machine.
     locale: LANG === 'de' ? 'de-DE' : 'en-GB',
-    timezoneId: 'Europe/Berlin',
+    timezoneId: process.env.SHOT_TZ || 'Europe/Berlin',
   });
 
   await context.addInitScript(

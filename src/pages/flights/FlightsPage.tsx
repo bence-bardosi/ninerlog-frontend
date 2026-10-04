@@ -98,6 +98,7 @@ function monthLabel(month: string, locale: string): string {
   return new Date(Date.UTC(Number(year), Number(m) - 1, 1)).toLocaleDateString(locale, {
     month: 'long',
     year: 'numeric',
+    timeZone: 'UTC',
   });
 }
 
@@ -701,7 +702,7 @@ export default function FlightsPage() {
                   >
                     <td className="px-3 py-2 whitespace-nowrap text-slate-800 dark:text-slate-200">
                       <span className="text-xs text-slate-400 dark:text-slate-500">
-                        {new Date(`${flight.date}T00:00:00`).toLocaleDateString(i18n.language, { weekday: 'short' })}
+                        {new Date(`${flight.date}T00:00:00Z`).toLocaleDateString(i18n.language, { weekday: 'short', timeZone: 'UTC' })}
                       </span>{' '}
                       <span className="font-mono tabular-nums">{fmtDate(flight.date)}</span>
                     </td>

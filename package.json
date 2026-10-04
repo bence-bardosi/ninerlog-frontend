@@ -26,6 +26,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@date-fns/utc": "^2.1.1",
     "@hookform/resolvers": "^5.9.1",
     "@simplewebauthn/browser": "^13.3.0",
     "@tailwindcss/typography": "^0.5.20",

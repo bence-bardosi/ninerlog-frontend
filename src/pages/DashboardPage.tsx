@@ -20,7 +20,7 @@ import { recencyLevel, RECENCY_DOT_CLASSES } from '../lib/recency';
 function shortMonth(month: string, locale: string) {
   const [y, m] = month.split('-');
   if (!y || !m) return month;
-  return new Date(Date.UTC(Number(y), Number(m) - 1, 1)).toLocaleDateString(locale, { month: 'short' });
+  return new Date(Date.UTC(Number(y), Number(m) - 1, 1)).toLocaleDateString(locale, { month: 'short', timeZone: 'UTC' });
 }
 
 export default function DashboardPage() {
