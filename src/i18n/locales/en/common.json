@@ -148,6 +148,7 @@
       "flights": "Flights",
       "aircraft": "Aircraft",
       "lastLogin": "Last Login",
+      "lastActive": "Last Active",
       "actions": "Actions",
       "disabled": "Disabled",
       "locked": "Locked",
