@@ -46,7 +46,7 @@ export default function FlightCard({ flight, columns, onClick }: FlightCardProps
   const routeLabel = `${departure.code ?? departure.name ?? '—'} → ${arrival.code ?? arrival.name ?? '—'}`;
 
   // Weekday follows the reader's locale; the date their format preference.
-  const weekday = new Date(`${flight.date}T00:00:00`).toLocaleDateString(i18n.language, { weekday: 'short' });
+  const weekday = new Date(`${flight.date}T00:00:00Z`).toLocaleDateString(i18n.language, { weekday: 'short', timeZone: 'UTC' });
 
   // Cells honour the flights-list column setting, as the table's do.
   const offOnCells: Cell[] = columns.offOnBlock

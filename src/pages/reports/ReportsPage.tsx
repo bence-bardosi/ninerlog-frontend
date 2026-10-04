@@ -838,11 +838,11 @@ function countryName(code: string, locale: string) {
 function dayName(isoDow: number, locale: string) {
   // ISO day 1..7 mapped onto the week of 2024-01-01, a Monday.
   const date = new Date(Date.UTC(2024, 0, isoDow));
-  return date.toLocaleDateString(locale, { weekday: 'short' });
+  return date.toLocaleDateString(locale, { weekday: 'short', timeZone: 'UTC' });
 }
 
 function monthName(month: number, locale: string) {
-  return new Date(Date.UTC(2024, month - 1, 1)).toLocaleDateString(locale, { month: 'short' });
+  return new Date(Date.UTC(2024, month - 1, 1)).toLocaleDateString(locale, { month: 'short', timeZone: 'UTC' });
 }
 
 /** Renders an API `YYYY-MM` key as a readable month and year. */
@@ -851,6 +851,7 @@ function longMonth(month: string, locale: string) {
   return new Date(Date.UTC(Number(y), Number(m) - 1, 1)).toLocaleDateString(locale, {
     month: 'long',
     year: 'numeric',
+    timeZone: 'UTC',
   });
 }
 
