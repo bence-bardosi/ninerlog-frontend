@@ -91,7 +91,7 @@
     "signatureRequired": "Please draw a signature before submitting."
   },
   "audit": {
-    "title": "Signature history & audit trail",
+    "title": "Signature history",
     "statusVoided": "Voided",
     "unknownSigner": "Unknown instructor",
     "signedAt": "Signed on {{date}}",

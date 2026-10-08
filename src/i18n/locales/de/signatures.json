@@ -91,7 +91,7 @@
     "signatureRequired": "Bitte zeichnen Sie eine Unterschrift, bevor Sie fortfahren."
   },
   "audit": {
-    "title": "Unterschriftsverlauf & Audit-Trail",
+    "title": "Unterschriftsverlauf",
     "statusVoided": "Widerrufen",
     "unknownSigner": "Unbekannter Fluglehrer",
     "signedAt": "Unterschrieben am {{date}}",
