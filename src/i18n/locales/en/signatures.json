@@ -89,5 +89,15 @@
     "submit": "Sign this entry",
     "submitting": "Submitting...",
     "signatureRequired": "Please draw a signature before submitting."
+  },
+  "audit": {
+    "title": "Signature history & audit trail",
+    "statusVoided": "Voided",
+    "unknownSigner": "Unknown instructor",
+    "signedAt": "Signed on {{date}}",
+    "voidedAt": "Voided on {{date}}",
+    "reasonLabel": "Reason",
+    "viewSignature": "View voided signature",
+    "hideSignature": "Hide signature"
   }
 }
